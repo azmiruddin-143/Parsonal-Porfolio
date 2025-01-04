@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../src/assets/main-logo-website.png'
 
 const Header = () => {
+    const [activeLink, setActiveLink] = useState("home"); // Default active link
+    const handleScroll = (id) => {
+        setActiveLink(id);
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    };
     return (
-        <div className='2xl:mx-64 bg-base-100 sticky z-10 top-0 xl:mx-32 my-4 rounded-full lg:px-6 px-4 border'>
+        <div  className='2xl:mx-64 bg-base-100 sticky z-10 top-0 xl:mx-32 my-4 rounded-full lg:px-6 px-4 border'>
             <div className="navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -40,7 +45,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:hidden">
                     <ul className="menu text-lg gap-8 menu-horizontal px-1">
-                    <NavLink
+                        <NavLink
                             to="/"
                             className={({ isActive }) =>
                                 isActive ? "text-[#72b626] " : "text-black"
@@ -49,9 +54,9 @@ const Header = () => {
                             Home
                         </NavLink>
                         <NavLink
-                            to="/about"
+                            to="about"
                             className={({ isActive }) =>
-                                 isActive ? "text-[#72b626] " : "text-black"
+                                isActive ? "text-[#72b626] " : "text-black"
                             }
                         >
                             About
@@ -59,7 +64,7 @@ const Header = () => {
                         <NavLink
                             to="/skills"
                             className={({ isActive }) =>
-                                 isActive ? "text-[#72b626] " : "text-black"
+                                isActive ? "text-[#72b626] " : "text-black"
                             }
                         >
                             Skills
@@ -67,7 +72,7 @@ const Header = () => {
                         <NavLink
                             to="/projects"
                             className={({ isActive }) =>
-                                 isActive ? "text-[#72b626] " : "text-black"
+                                isActive ? "text-[#72b626] " : "text-black"
                             }
                         >
                             Projects
@@ -85,42 +90,37 @@ const Header = () => {
                 <div className="navbar-end w-full">
                     <ul className="menu hidden lg:flex text-lg gap-8 menu-horizontal px-1">
                         <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("home")}
+                            className={activeLink === "home" ? "text-[#72b626]" : "text-black"}
                         >
                             Home
                         </NavLink>
                         <NavLink
-                            to="/about"
-                            className={({ isActive }) =>
-                                 isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("about")}
+                            className={activeLink === "about" ? "text-[#72b626]" : "text-black"}
                         >
                             About
                         </NavLink>
                         <NavLink
-                            to="/skills"
-                            className={({ isActive }) =>
-                                 isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("skills")}
+                            className={activeLink === "skills" ? "text-[#72b626]" : "text-black"}
                         >
                             Skills
                         </NavLink>
                         <NavLink
-                            to="/projects"
-                            className={({ isActive }) =>
-                                 isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("projects")}
+                            className={activeLink === "projects" ? "text-[#72b626]" : "text-black"}
                         >
                             Projects
                         </NavLink>
                         <NavLink
-                            to="/contact"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("contact")}
+                            className={activeLink === "contact" ? "text-[#72b626]" : "text-black"}
                         >
                             Contact
                         </NavLink>

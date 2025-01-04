@@ -3,8 +3,7 @@ import aboutimage from '../../src/assets/all-skils.png'
 
 const About = () => {
     return (
-        <div className='2xl:mx-64 mx-10  lg:flex items-center gap-10 justify-between xl:mx-32'>
-
+        <div id='about' className='2xl:mx-64 mx-10  lg:flex items-center gap-10 justify-between xl:mx-32'>
 
             <div className='hidden lg:block'>
                 <img className='rounded-lg' src={aboutimage} alt="" />

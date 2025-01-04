@@ -28,11 +28,11 @@ const Contact = () => {
 
 
     return (
-        <div>
-            <h1 className='text-5xl text-center my-4'>Get in touch</h1>
-            <div className='flex justify-center gap-20 2xl:mx-64 my-20 xl:mx-32'>
+        <div id='contact'>
+            <h1 className='sm:text-4xl md:text-5xl text-3xl text-center my-4'>Get in touch</h1>
+            <div className='lg:flex justify-center gap-10 2xl:mx-64 sm:my-20 my-5  xl:mx-32'>
 
-                <div className="shadow-2xl w-[30%]">
+                <div className="shadow-2xl lg:w-[40%] ">
                     <form onSubmit={sendEmail} className="card-body w-full">
                         <div className="form-control">
                             <input type="text" name='from_name' placeholder="Full Name" className="input input-bordered" required />
@@ -44,7 +44,7 @@ const Contact = () => {
                             <textarea placeholder='Your Message' class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Submit</button>
+                            <button className="btn bg-[#72b626] text-white">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                 {/* .... */}
 
 
-                <div className='shadow-2xl flex flex-col justify-center  p-10 w-[30%] '>
+                <div className='shadow-2xl flex flex-col justify-center  p-10 lg:w-[40%]] '>
                     <div className='flex items-center gap-2 mb-2'>
                         <MdCall className='text-2xl text-black' />
                         <h1 className='text-lg text-black'>+8801933646077</h1>

@@ -15,20 +15,20 @@ const Projects = () => {
 
 
     return (
-        <div className='2xl:mx-64 my-20 xl:mx-32'>
+        <div id='projects' className='2xl:mx-64 mx-10 sm:my-28 my-5 xl:mx-32'>
             <div class="relative text-center">
-                <h1 class="text-5xl font-bold text-gray-200 uppercase">
+                <h1 class="sm:text-5xl text-3xl font-bold text-gray-200 uppercase">
                     Our Recent All Projects
                 </h1>
-                <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-pink-500 text-2xl font-bold">
+                <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#72b626] sm:text-3xl text-xl font-bold">
                     Latest Works ({projects.length})
                 </span>
             </div>
 
-            <div className='grid my-20 grid-cols-3 gap-5 place-items-center'>
+            <div className='grid my-20 sm:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center'>
                 {
                     projects.map(project =>
-                        <div className='border h-96 p-6 rounded-md'>
+                        <div className='border sm:h-96 sm:p-6 p-3 rounded-md transform transition-transform duration-700 hover:translate-y-[-10px]'>
                             <img src={project.image} alt="" />
                             <div className='my-3 '>
                                 <h1>{project.name}</h1>
@@ -39,7 +39,7 @@ const Projects = () => {
                                     <FaLink />
                                     <h1 className='border-b'>Live Preview</h1>
                                 </Link>
-                                <Link to={`/details/${project._id}`} ><button className='bg-[#72b626] text-white py-2 px-5 rounded-md'>View more</button></Link>
+                                <Link to={`/details/${project._id}`} ><button className='bg-[#72b626] text-white sm:py-2 py-1 text-sm sm:text-md px-3 sm:px-5 rounded-md'>View more</button></Link>
                             </div>
                         </div>
                     )

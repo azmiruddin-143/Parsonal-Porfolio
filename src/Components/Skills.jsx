@@ -6,7 +6,7 @@ import wordpressimage from '.././/assets/wordpress-logo.png'
 
 const Skills = () => {
     return (
-        <div className='bg-[#00000006] py-4 my-16'>
+        <div id='skills' className='bg-[#00000006] py-4 my-16'>
             <div className='2xl:mx-64 my-20 mx-10 xl:mx-32'>
                 <h1 className='lg:text-5xl sm:text-3xl md:text-4xl text-2xl text-center'>Skills & Services</h1>
                 <p className='py-3 text-center text-lg'>These are my working Skills & Services I have done.</p>
