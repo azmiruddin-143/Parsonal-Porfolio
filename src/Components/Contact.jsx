@@ -3,6 +3,7 @@ import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdCall, MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { Link } from 'react-router-dom';
 const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
@@ -69,12 +70,12 @@ const Contact = () => {
                     </div>
 
                     <div className='my-4 flex gap-4 items-center'>
-                        <FaFacebook className='text-2xl text-black' />
-                        <FaGithub className='text-2xl text-black' />
-                        <MdEmail className='text-2xl text-black' />
-                        <IoLogoWhatsapp className='text-2xl text-black' />
+                        <Link to={'https://www.facebook.com/azmiruddin143/'} ><FaFacebook className='text-2xl text-black' /></Link>
+                        <Link to={'https://github.com/azmiruddin-143'} ><FaGithub className='text-2xl text-black' /></Link>
+                        <Link to={'meilto:freelancerazmir@gmail.com'} ><MdEmail className='text-2xl text-black' /></Link>
+                        <Link to={'http://wa.me/8801933946077'} ><IoLogoWhatsapp className='text-2xl text-black' /></Link>
                     </div>
-
+                    
                 </div>
 
             </div>

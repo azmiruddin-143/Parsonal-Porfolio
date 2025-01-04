@@ -160,7 +160,7 @@ const Header = () => {
                             </svg>
                         </label> */}
 
-                        <button className='uppercase sm:py-2 py-1 px-3 sm:text-md text-sm sm:px-4 bg-[#72b626] rounded-full text-[white] font-bold'>Hire Me</button>
+                        <button onClick={() => handleScroll("contact")} className='uppercase sm:py-2 py-1 px-3 sm:text-md text-sm sm:px-4 bg-[#72b626] rounded-full text-[white] font-bold'>Hire Me</button>
                     </div>
 
                 </div>

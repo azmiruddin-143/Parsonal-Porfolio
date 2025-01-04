@@ -35,11 +35,14 @@ const Projects = () => {
                                 <p>{project.sortDetails}</p>
                             </div>
                             <div className='flex items-center my-3 justify-between'>
-                                <Link className='flex items-center gap-2'>
+                                <Link 
+                                to={`${project.liveLink}`}
+                                className='flex items-center gap-2'>
                                     <FaLink />
                                     <h1 className='border-b'>Live Preview</h1>
                                 </Link>
                                 <Link to={`/details/${project._id}`} ><button className='bg-[#72b626] text-white sm:py-2 py-1 text-sm sm:text-md px-3 sm:px-5 rounded-md'>View more</button></Link>
+                              
                             </div>
                         </div>
                     )

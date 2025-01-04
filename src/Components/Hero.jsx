@@ -3,6 +3,7 @@ import azmiruddin from '../../src/assets/azmir-uddin.png'
 // import azmirbg from '../../src/assets/image-bg.jpg'
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <div id='home' className='lg:flex sm:my-20 my-10 justify-between items-center mx-10 lg:mx-10 2xl:mx-64 xl:mx-32'>
@@ -14,9 +15,9 @@ const Hero = () => {
                     <button className=' sm:py-3 py-1 px-3 sm:px-5 my-4 text-sm sm:text-md text-white bg-[#72b626] rounded-md azmir'>Download Resume </button>
                 </div>
                 <div className='flex gap-3 items-center my-3'>
-                    <FaFacebook className='text-2xl sm:text-4xl' />
-                    <FaGithub className='text-2xl sm:text-4xl' />
-                    <FaXTwitter className='text-2xl sm:text-4xl' />
+                    <Link to={'https://www.facebook.com/azmiruddin143/'}  ><FaFacebook className='text-2xl sm:text-4xl' /></Link>
+                    <Link to={'https://github.com/azmiruddin-143'} ><FaGithub className='text-2xl sm:text-4xl' /></Link>
+                    <Link to={'https://x.com/azmiruddin143_'}><FaXTwitter className='text-2xl sm:text-4xl' /></Link>
                 </div>
             </div>
 
