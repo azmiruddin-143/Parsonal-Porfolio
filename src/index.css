@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+  .ninja24 {
+    animation: myAnim2 2s linear 0s infinite;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes myAnim2 {
+    0% {
+      transform: rotate(1deg);
+    }
+
+    100% {
+      transform: rotate(90deg);
+    }
+
+
+  }
