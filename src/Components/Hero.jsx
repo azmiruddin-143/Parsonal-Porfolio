@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Hero = () => {
     return (
-        <div className='lg:flex my-20 justify-between items-center mx-10 lg:mx-10 2xl:mx-64 xl:mx-32'>
+        <div className='lg:flex sm:my-20 my-10 justify-between items-center mx-10 lg:mx-10 2xl:mx-64 xl:mx-32'>
             <div className='lg:flex-1'>
                 <h1 className='xl:text-7xl text-2xl md:text-5xl'>I'm Azmir Uddin</h1>
                 <h1 className='xl:text-4xl md:text-2xl py-4'>I am a Web Developer in Front End</h1>
