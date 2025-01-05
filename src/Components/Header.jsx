@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <div className='2xl:mx-64 bg-base-100 sticky z-10 top-0 xl:mx-32 my-4 rounded-full lg:px-6  border'>
             <div className="navbar ">
-                <div className="navbar-start w-full">
+                <div className="navbar-start w-full lg:w-[50%] ">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0">
                             <svg
@@ -67,9 +67,9 @@ const Header = () => {
                             </NavLink>
                         </ul>
                     </div>
-                    <div className='flex gap-2 items-center'>
+                    <div onClick={() => handleScroll("home")} className='flex gap-2 items-center'>
                         <img className='sm:w-16 w-8' src={logo} alt="" />
-                        <h1 className='sm:text-2xl'>Azmir Uddin</h1>
+                        <h1 className='sm:text-2xl text-[15px]'>Azmir Uddin</h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:hidden">

@@ -15,7 +15,7 @@ const Projects = () => {
 
 
     return (
-        <div id='projects' className='2xl:mx-64 mx-10 sm:my-28 my-5 xl:mx-32'>
+        <div id='projects' className='2xl:mx-64 mx-5 sm:my-28 my-5 xl:mx-32'>
             <div class="relative text-center">
                 <h1 class="sm:text-5xl text-3xl font-bold text-gray-200 uppercase">
                     Our Recent All Projects

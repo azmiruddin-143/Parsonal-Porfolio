@@ -6,6 +6,7 @@
         "description":"Food Shop is an innovative online marketplace built with React, Node.js, Express, MongoDB, and Firebase. It provides a delightful shopping experience, offering fresh and high-quality food items with easy navigation. Featuring secure authentication, seamless transactions, and real-time updates, Food Shop ensures fast delivery and customer satisfaction in every order.",
         "sortDetails" :"Food Shop is an e-commerce platform built with React, Node.js, MongoDB, and Firebase, offering fresh food.",
         "technogie": "#react-node-express-mongodb-firebase",
+        "struggles":"It took me five days to complete this project. This project contains many dynamic functions which are very important for users. And I have some functions in this project that I haven't done yet that I'm trying to do in the future.",
         "liveLink":"https://foodfusion-4eca3.web.app/"
     },
     {
@@ -15,6 +16,7 @@
         "description": "Sport Shop is a dynamic e-commerce platform built using React, Node.js, Express, MongoDB, and Firebase. It offers a seamless shopping experience for sports enthusiasts, featuring a wide range of quality products, secure authentication, real-time inventory updates, and fast checkout. Designed for performance and scalability, it ensures user satisfaction.",
         "sortDetails": "It offers a seamless shopping experience for sports enthusiasts, featuring a wide range of quality products,",
         "technogie": "#react-node-express-mongodb-firebase",
+        "struggles":"I have brought a beautiful website for them. You can easily buy any product of your choice from this website and the admin can easily post the product. It took me four days to make this website and I faced many problems and completed the work with great patience.",
         "liveLink": "https://sports-equipment-store-2ec4b.web.app/"
 
     },
@@ -25,6 +27,7 @@
         "description":"Clothing Shop is a stylish and modern e-commerce website built with WordPress using the Woodmart theme and enhanced by Elementor. Offering a wide variety of fashion items, it provides a seamless shopping experience with intuitive navigation, high-quality product images, and easy checkout. The site is optimized for performance and user engagement",
         "sortDetails":"Clothing Shop is a stylish and modern e-commerce website built with WordPress using the Woodmart theme and enhanced by Elementor.",
         "technogie": "#woodmart-elementor-customcode",
+        "struggles":"Made entirely with wordpress and using theme Woodmart theme and in this project my challenging thing is to setup payment gateway. And this project belongs to a Bangladeshi client.I designed the website of my client's choice as per his requirement. He is very happy with what he sees.",
         "liveLink" :"https://fabricflix.com/"
     }
 ]

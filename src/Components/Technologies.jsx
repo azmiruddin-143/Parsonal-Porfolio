@@ -3,7 +3,7 @@ import { FaRegSquareCheck } from 'react-icons/fa6';
 
 const Technologies = () => {
     return (
-        <div className='2xl:mx-64 mx-10 my-20 xl:mx-32'>
+        <div className='2xl:mx-64 mx-5 sm:my-20 my-5 xl:mx-32'>
             <h1 className='text-center text-2xl sm:text-3xl md:text-5xl border-b border-[#72b626] pb-5 w-fit  mx-auto'>Technologies and Tools</h1>
             <div className='sm:flex justify-evenly my-10'>
                 <div>

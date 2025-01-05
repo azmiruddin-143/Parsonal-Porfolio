@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
-        <div id='home' className='lg:flex sm:my-20 my-10 justify-between items-center mx-10 lg:mx-10 2xl:mx-64 xl:mx-32'>
+        <div id='home' className='lg:flex sm:my-20 my-10 justify-between items-center mx-5 lg:mx-10 2xl:mx-64 xl:mx-32'>
             <div className='lg:flex-1'>
                 <h1 className='xl:text-7xl text-2xl md:text-5xl'>I'm Azmir Uddin</h1>
                 <h1 className='xl:text-4xl md:text-2xl py-4'>I am a Web Developer in Front End</h1>
@@ -32,7 +32,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='border-4 w-fit border-[#72b626] rounded-full p-2'>
+            <div className='border-4 w-fit border-[#72b626] rounded-full p-2 bouncing-image'>
                 <img className='bg-gradient-to-b from-[#73b626c4]  via-[#d3c20574] to-[#121112be] lg:w-[400px] xl:w-full relative rounded-full'
                     src={azmiruddin} alt="" />
             </div>

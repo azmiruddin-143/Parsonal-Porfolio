@@ -3,21 +3,63 @@
 @tailwind utilities;
 
 
+body {
+  font-family: Georgia;
+}
 
+/* Bounce Path Animation */
+@keyframes moveImage {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 10px;  /* Right top */
+  }
+  50% {
+    top: 10px;  /* Bottom right */
+    left: 10px;
+  }
+  75% {
+    top: 10px;  /* Bottom left */
+    left: 0;
+  }
+  100% {
+    top: 0;  /* Top left */
+    left: 0;
+  }
+}
+
+.bouncing-image {
+  position: relative;
+  animation: 5s linear 0s infinite normal none running moveImage;
+  /* animation: moveImage 4s ease-in-out infinite; */
+}
+
+.ninja24 {
+  animation: myAnim2 15s linear 0s infinite;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes myAnim2 {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+@media (max-width: 1080px) { /* Adjust the 768px based on your needs */
+  .bouncing-image {
+      animation: none; /* Hides the animation on small screens */
+  }
 
   .ninja24 {
-    animation: myAnim2 2s linear 0s infinite;
-    animation-iteration-count: infinite;
+    animation: none;
   }
-
-  @keyframes myAnim2 {
-    0% {
-      transform: rotate(1deg);
-    }
-
-    100% {
-      transform: rotate(90deg);
-    }
-
-
-  }
+}
