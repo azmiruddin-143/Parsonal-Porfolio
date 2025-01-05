@@ -12,7 +12,18 @@ const Hero = () => {
                 <h1 className='xl:text-4xl md:text-2xl py-4'>I am a Web Developer in Front End</h1>
                 <p className='2xl:w-8/12 md:w-10/12'>Welcome to my Website! I am a Front-end developer . I am passionate about my work and I am always looking for new and innovative ways to improve my skills and knowledge. I am also a strong believer in communication and collaboration, and I always work closely with my clients to ensure that their needs are met and exceeded.</p>
                 <div className=''>
-                    <button className=' sm:py-3 py-1 px-3 sm:px-5 my-4 text-sm sm:text-md text-white bg-[#72b626] rounded-md azmir'>Download Resume </button>
+                    <a
+                        href="https://docs.google.com/document/d/1uA3CXrgGby7PsdSiRbrYFTP5h69D8OTjTULvNx56E1g/export?format=pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="sm:py-3 py-1 px-3 sm:px-5 my-4 text-sm sm:text-md text-white bg-[#72b626] rounded-md azmir">
+                            Download Resume
+                        </button>
+                    </a>
+
+
+
                 </div>
                 <div className='flex gap-3 items-center my-3'>
                     <Link to={'https://www.facebook.com/azmiruddin143/'}  ><FaFacebook className='text-2xl sm:text-4xl' /></Link>

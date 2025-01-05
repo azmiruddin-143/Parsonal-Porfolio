@@ -38,7 +38,7 @@ const Projects = () => {
                                 <Link 
                                 to={`${project.liveLink}`}
                                 className='flex items-center gap-2'>
-                                    <FaLink />
+                                    <FaLink className='text-2xl' />
                                     <h1 className='border-b'>Live Preview</h1>
                                 </Link>
                                 <Link to={`/details/${project._id}`} ><button className='bg-[#72b626] text-white sm:py-2 py-1 text-sm sm:text-md px-3 sm:px-5 rounded-md'>View more</button></Link>

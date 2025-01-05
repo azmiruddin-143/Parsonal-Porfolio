@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../src/assets/main-logo-website.png'
+import logo from '../../src/assets/AzmirUddin.png'
 
 const Header = () => {
     const [activeLink, setActiveLink] = useState("home"); // Default active link
@@ -9,11 +9,11 @@ const Header = () => {
         document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     };
     return (
-        <div  className='2xl:mx-64 bg-base-100 sticky z-10 top-0 xl:mx-32 my-4 rounded-full lg:px-6 px-4 border'>
+        <div className='2xl:mx-64 bg-base-100 sticky z-10 top-0 xl:mx-32 my-4 rounded-full lg:px-6  border'>
             <div className="navbar ">
-                <div className="navbar-start">
+                <div className="navbar-start w-full">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
@@ -30,58 +30,82 @@ const Header = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            <NavLink
+                                to=""
+                                onClick={() => handleScroll("home")}
+                                className={activeLink === "home" ? "text-[#72b626]" : "text-black"}
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
+                                to=""
+                                onClick={() => handleScroll("about")}
+                                className={activeLink === "about" ? "text-[#72b626]" : "text-black"}
+                            >
+                                About
+                            </NavLink>
+                            <NavLink
+                                to=""
+                                onClick={() => handleScroll("skills")}
+                                className={activeLink === "skills" ? "text-[#72b626]" : "text-black"}
+                            >
+                                Skills
+                            </NavLink>
+                            <NavLink
+                                to=""
+                                onClick={() => handleScroll("projects")}
+                                className={activeLink === "projects" ? "text-[#72b626]" : "text-black"}
+                            >
+                                Projects
+                            </NavLink>
+                            <NavLink
+                                to=""
+                                onClick={() => handleScroll("contact")}
+                                className={activeLink === "contact" ? "text-[#72b626]" : "text-black"}
+                            >
+                                Contact
+                            </NavLink>
                         </ul>
                     </div>
-                    <img className='w-36' src={logo} alt="" />
+                    <div className='flex gap-2 items-center'>
+                        <img className='sm:w-16 w-8' src={logo} alt="" />
+                        <h1 className='sm:text-2xl'>Azmir Uddin</h1>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:hidden">
                     <ul className="menu text-lg gap-8 menu-horizontal px-1">
                         <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("home")}
+                            className={activeLink === "home" ? "text-[#72b626]" : "text-black"}
                         >
                             Home
                         </NavLink>
                         <NavLink
-                            to="about"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("about")}
+                            className={activeLink === "about" ? "text-[#72b626]" : "text-black"}
                         >
                             About
                         </NavLink>
                         <NavLink
-                            to="/skills"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("skills")}
+                            className={activeLink === "skills" ? "text-[#72b626]" : "text-black"}
                         >
                             Skills
                         </NavLink>
                         <NavLink
-                            to="/projects"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("projects")}
+                            className={activeLink === "projects" ? "text-[#72b626]" : "text-black"}
                         >
                             Projects
                         </NavLink>
                         <NavLink
-                            to="/contact"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#72b626] " : "text-black"
-                            }
+                            to=""
+                            onClick={() => handleScroll("contact")}
+                            className={activeLink === "contact" ? "text-[#72b626]" : "text-black"}
                         >
                             Contact
                         </NavLink>
